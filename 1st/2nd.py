@@ -2,8 +2,10 @@ from PIL import Image
 
 data = ['584', 'L3', '7', '9F', '20']
 
-im_path = r'challenge.png'
-im = Image.open(im_path)
+file = open('challenge_alpha.jpg', mode='rb')
+while file.readable():
+    print(file.readline())
+im = Image.open('challenge_alpha.jpg.png')
 width, height = im.size
 # 宽高
 print(im.size, width, height)
