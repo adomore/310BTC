@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../common')
 
-import words as ws
+from common import words as ws
 
 data = '511 B20 332 328 410 530 ' \
        '22B 0FE 52E D0F 7A1 65B ' \
