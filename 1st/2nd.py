@@ -32,7 +32,14 @@ print(cipher)
 # 以“U2FsdGVkX1”的加密字串，这些信息只有有密钥的人才能解密看到，
 # 对原文进行了高级AES加密，国家政府和银行常用
 
+cipher_file = open('cipher.txt', 'w')
+cipher_file.write(cipher)
+cipher_file.close()
+
 data = ['584', 'L3', '7', '9F', '20']
+
+'openssl enc -aes-128-cbc -in cipher.txt -out out.txt -pass pass:helloworld'
+
 
 file = open('challenge_alpha.jpg', mode='rb')
 while file.readable():
