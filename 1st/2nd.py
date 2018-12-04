@@ -38,7 +38,7 @@ cipher_file.close()
 
 data = ['584', 'L3', '7', '9F', '20']
 
-'openssl enc -aes-128-cbc -in cipher.txt -out out.txt -pass pass:helloworld'
+'openssl enc -aes-128-cbc -in cipher.txt -out out.txt -pass pass:L379F48502'
 
 
 file = open('challenge_alpha.jpg', mode='rb')
